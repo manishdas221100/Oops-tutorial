@@ -9,7 +9,7 @@ class Chatbook:
 
     def menu(self):
         user_input = input(
-            "Welcome to Chatbook!! How would you like to proceed? "
+            "Welcome to Chatbook!! How would you like to proceed?\n "
             "1. Press 1 to signup\n"
             "2. Press 2 to signin\n"
             "3. Press 3 to write a post\n"
@@ -18,9 +18,9 @@ class Chatbook:
         )
 
         if user_input == "1":
-            pass
+            self.signup()
         elif user_input == "2":
-            pass
+            self.signin()
         elif user_input == "3":
             pass
         elif user_input == "4":
@@ -28,4 +28,31 @@ class Chatbook:
         else:
             exit()
 
+
+    def  signup(self):
+        email = input(" enetr your email here--> ")
+        pwd = input("enetr your epasword here--> ")
+        self.username = email
+        self.password = pwd
+        print("u have signed up succesfully")
+        print("\n")
+        self.menu()
+
+
+    def signin(self):
+        if self.username == '' and self.password =='':
+            print("signup first by pressing 1 in the main menu")
+        else:
+            uname = input(" enetr your email here--> ")
+            pwd = input(" enetr your pass here--> ")
+            if self.username == uname and self.password ==pwd:
+                print("u have been sighned in succesfully")
+                self.loggedin = True
+
+            else:
+                print("not correct !! input correct credentials")
+
+        print("\n")
+        self.menu()
+                
 obj = Chatbook()

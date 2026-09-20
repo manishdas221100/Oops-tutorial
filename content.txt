@@ -4,3 +4,8 @@
    > attributed caleed itself, methoids called manually
 
 3. Why python is called Object Oriented Programming
+
+4.  Advantages of OOPs concept:
+   > You can create your own datatype
+   > code resusable
+   > easy to colab
