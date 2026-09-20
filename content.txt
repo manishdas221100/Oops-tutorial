@@ -1,0 +1,6 @@
+1. Class and object (Example)
+2. Class has data/attribute  and it has func/methods
+   > code walkthrough
+   > attributed caleed itself, methoids called manually
+
+3. Why python is called Object Oriented Programming
